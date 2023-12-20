@@ -1,0 +1,6 @@
+.Buttons1:hover{
+    -fx-background-color: linear-gradient(to top,#F6830C,#FFFF33);
+}
+.ButtonColours{
+    -fx-background-color: linear-gradient(to top,#ffffff,#ffffff);
+}

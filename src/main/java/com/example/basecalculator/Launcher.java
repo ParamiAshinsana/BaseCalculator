@@ -38,7 +38,6 @@ public class Launcher extends Application {
     public void UserInput(ActionEvent actionEvent) {
 
     }
-
 //    public void BinaryButton(ActionEvent actionEvent) {
 //        String input = UserInput.getText();
 //        try {

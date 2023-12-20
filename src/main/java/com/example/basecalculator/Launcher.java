@@ -52,7 +52,7 @@ public class Launcher extends Application {
     }
 
     public void exitButton(ActionEvent actionEvent) {
-
+        System.exit(0);
     }
 
     public void ClearButton(ActionEvent actionEvent) {

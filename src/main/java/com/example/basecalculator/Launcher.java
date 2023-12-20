@@ -62,7 +62,6 @@ public class Launcher extends Application {
                 break;
             }
         }
-
         if (isValid) {
             try {
                 int decimal = Integer.parseInt(input);

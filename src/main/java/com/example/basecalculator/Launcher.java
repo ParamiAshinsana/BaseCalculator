@@ -56,6 +56,7 @@ public class Launcher extends Application {
     }
 
     public void ClearButton(ActionEvent actionEvent) {
-
+        UserInput.setText("");
+        OutputPanel.setText("             No Input");
     }
 }

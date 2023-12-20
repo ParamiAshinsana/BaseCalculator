@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.String?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
@@ -10,17 +11,17 @@
 
 <AnchorPane prefHeight="340.0" prefWidth="560.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.basecalculator.Launcher">
    <children>
-      <TextField fx:id="UserInput" layoutX="14.0" layoutY="36.0" onAction="#UserInput" prefHeight="62.0" prefWidth="489.0">
+      <TextField fx:id="UserInput" layoutX="4.0" layoutY="36.0" onAction="#UserInput" prefHeight="62.0" prefWidth="437.0" promptText="Input Decimal Number !">
          <font>
             <Font size="24.0" />
          </font>
       </TextField>
-      <Label fx:id="OutputPanel" layoutX="21.0" layoutY="110.0" prefHeight="62.0" prefWidth="356.0" style="-fx-border-color: white;" text="             No Input" textAlignment="CENTER" textFill="WHITE">
+      <Label fx:id="OutputPanel" layoutX="12.0" layoutY="110.0" prefHeight="62.0" prefWidth="538.0" style="-fx-border-color: white;" text="                    No Input" textAlignment="CENTER" textFill="WHITE">
          <font>
-            <Font name="System Bold" size="32.0" />
+            <Font name="System Bold" size="29.0" />
          </font>
       </Label>
-      <Button fx:id="BinaryButton" graphicTextGap="25.0" layoutX="6.0" layoutY="197.0" mnemonicParsing="false" onAction="#BinaryButton" prefHeight="48.0" prefWidth="172.0" style="-fx-background-color: white;" text="Binary">
+      <Button fx:id="BinaryButton" graphicTextGap="25.0" layoutX="6.0" layoutY="197.0" mnemonicParsing="false" onAction="#BinaryButton" prefHeight="48.0" prefWidth="172.0" stylesheets="@../css/stylesheet.css" text="Binary">
          <font>
             <Font name="System Bold Italic" size="17.0" />
          </font>
@@ -31,8 +32,12 @@
                </image>
             </ImageView>
          </graphic>
+         <styleClass>
+            <String fx:value="Buttons1" />
+            <String fx:value="ButtonColours" />
+         </styleClass>
       </Button>
-      <Button fx:id="Hexadecimal" graphicTextGap="6.0" layoutX="189.0" layoutY="197.0" mnemonicParsing="false" onAction="#Hexadecimal" prefHeight="48.0" prefWidth="172.0" style="-fx-background-color: white;" text="Hexadecimal">
+      <Button fx:id="Hexadecimal" graphicTextGap="6.0" layoutX="189.0" layoutY="197.0" mnemonicParsing="false" onAction="#Hexadecimal" prefHeight="48.0" prefWidth="172.0" stylesheets="@../css/stylesheet.css" text="Hexadecimal">
          <font>
             <Font name="System Bold Italic" size="17.0" />
          </font>
@@ -43,8 +48,12 @@
                </image>
             </ImageView>
          </graphic>
+         <styleClass>
+            <String fx:value="ButtonColours" />
+            <String fx:value="Buttons1" />
+         </styleClass>
       </Button>
-      <Button fx:id="OctalButton" graphicTextGap="20.0" layoutX="372.0" layoutY="197.0" mnemonicParsing="false" onAction="#OctalButton" prefHeight="48.0" prefWidth="172.0" style="-fx-background-color: white;" text="Octal">
+      <Button fx:id="OctalButton" graphicTextGap="20.0" layoutX="372.0" layoutY="197.0" mnemonicParsing="false" onAction="#OctalButton" prefHeight="48.0" prefWidth="172.0" stylesheets="@../css/stylesheet.css" text="Octal">
          <font>
             <Font name="System Bold Italic" size="17.0" />
          </font>
@@ -55,6 +64,10 @@
                </image>
             </ImageView>
          </graphic>
+         <styleClass>
+            <String fx:value="ButtonColours" />
+            <String fx:value="Buttons1" />
+         </styleClass>
       </Button>
       <Button fx:id="exitButton" layoutX="396.0" layoutY="271.0" mnemonicParsing="false" onAction="#exitButton" prefHeight="39.0" prefWidth="111.0" text="Exit">
          <font>
@@ -68,7 +81,7 @@
             </ImageView>
          </graphic>
       </Button>
-      <Button fx:id="ClearButton" layoutX="399.0" layoutY="121.0" mnemonicParsing="false" onAction="#ClearButton" prefHeight="48.0" prefWidth="111.0" style="-fx-background-color: white;" text="Clear">
+      <Button fx:id="ClearButton" layoutX="449.0" layoutY="41.0" mnemonicParsing="false" onAction="#ClearButton" prefHeight="48.0" prefWidth="106.0" style="-fx-background-color: white;" text="Clear">
          <font>
             <Font name="System Bold Italic" size="17.0" />
          </font>

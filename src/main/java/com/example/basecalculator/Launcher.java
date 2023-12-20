@@ -39,8 +39,47 @@ public class Launcher extends Application {
 
     }
 
-    public void BinaryButton(ActionEvent actionEvent) {
+//    public void BinaryButton(ActionEvent actionEvent) {
+//        String input = UserInput.getText();
+//        try {
+//            int decimal = Integer.parseInt(input);
+//            String binary = Integer.toBinaryString(decimal);
+//            OutputPanel.setText(binary + "");
+//        } catch (Exception e) {
+//            OutputPanel.setText("                    No Input");
+//        }
+//    }
 
+    public void BinaryButton(ActionEvent actionEvent) {
+        String input = UserInput.getText();
+        boolean isValid = true;
+
+        for (int i = 0; i < input.length(); i++) {
+            char currentChar = input.charAt(i);
+
+            if (!Character.isDigit(currentChar)) {
+                isValid = false;
+                break;
+            }
+        }
+
+        if (isValid) {
+            try {
+                int decimal = Integer.parseInt(input);
+
+                if (decimal < 99999999) {
+                    String binary = Integer.toBinaryString(decimal);
+                    OutputPanel.setText(binary + "");
+                } else {
+                    OutputPanel.setText("Input exceeds the maximum allowed value");
+                }
+
+            } catch (Exception e) {
+                OutputPanel.setText("Conversion Error");
+            }
+        } else {
+            OutputPanel.setText("Invalid Input. Please enter a valid decimal number.");
+        }
     }
 
     public void Hexadecimal(ActionEvent actionEvent) {
@@ -57,6 +96,6 @@ public class Launcher extends Application {
 
     public void ClearButton(ActionEvent actionEvent) {
         UserInput.setText("");
-        OutputPanel.setText("             No Input");
+        OutputPanel.setText("                    No Input");
     }
 }
